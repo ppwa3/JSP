@@ -11,9 +11,7 @@
         <% } %>
             <!-- 8장과 9장의 회원제 게시판 프로젝트에서 사용할 링크 -->
             &nbsp;&nbsp;&nbsp; 
-            <a href="../08Board/List.jsp">게시판(페이징X)</a>
-            &nbsp;&nbsp;&nbsp; 
-            <a href="../09PagingBoard/List.jsp">게시판(페이징O)</a>
+            <a href="../mvcboard/list.do">mvc 게시판</a>
         </td>
     </tr>
 </table>
