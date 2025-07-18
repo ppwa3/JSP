@@ -90,6 +90,25 @@ public class WriteController extends HttpServlet {
 			dto.setSfile(savedFileName); //서버에 저장된 파일명
 		}
 		
+		//endsWith는 문자열의 메서드로 문자열이 특정 문자로 끝나는지 확인해주는 기능
+		
+		String fileType;
+		
+		if(dto.getSfile().endsWith("png") || dto.getSfile().endsWith("gif")
+				|| dto.getSfile().endsWith("jpg")) {
+		}
+		else if(dto.getSfile().endsWith("mp3") || dto.getSfile().endsWith("wav")) {
+			
+		}
+		else if(dto.getSfile().endsWith("mp4") || dto.getSfile().endsWith("avi")
+				|| dto.getSfile().endsWith("wmv")) {
+			
+		}
+		else {
+		
+		}
+		
+		
 		//DAO 인스턴스 생성 및 커넥션풀을 통한 연결
 		MVCBoardDAO dao = new MVCBoardDAO();
 		//insert 쿼리문 실행
